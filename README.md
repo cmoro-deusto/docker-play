@@ -44,7 +44,7 @@ Remember to change `/home/dordoka/Code` to the directory where your code is stor
 ## Using fig
 If you have `fig.sh` installed, you can just launch:
 ```
-sudo fig run play bash
+sudo fig run play
 ```
 
 ### Happy coding! :)
