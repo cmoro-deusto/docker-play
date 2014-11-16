@@ -37,7 +37,7 @@ Remember to map the ports to the docker host on run.
 You need docker v1.3+ installed. To get the container up and running and drop to an interactive shell, run:
  
 ```
-sudo docker run --rm -it -v "/home/dordoka/Code:/home/play/Code" -p 9000:9000 -p 9999:9999 -p 8888:8888 dordoka/play
+sudo docker run --rm -it -v "/home/dordoka/Code:/home/play/Code" -p 9000:9000 -p 9999:9999 -p 8888:8888 dordoka/play-framework
 ```
 Remember to change `/home/dordoka/Code` to the directory where your code is stored.
 

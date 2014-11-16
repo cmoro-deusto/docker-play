@@ -1,5 +1,5 @@
 play:
-  image: dordoka/play
+  image: dordoka/play-framework
   ports:
     - "9000:9000"
     - "9999:9999"
