@@ -4,6 +4,7 @@ docker-play
 This is a minimal docker container based on Ubuntu 14.04 for Play Framework development.
 
 # Description
+You should run this container interactivelly and launch activator console commands from within your play projects directories.
 
 Includes:
 
@@ -12,10 +13,10 @@ Includes:
  - Git, wget, curl, build-essential
 
 ## Users
-A user named play is created with sudoers privileges. Home is at `/home/play`.
+A user named `play` is created with sudoers privileges. Home is at `/home/play`.
 
 ## Volumes
-Exports a volume on `/home/play/Code`
+Exports a volume on `/home/play/Code`.
 You can mount the volume on run to a local directory containing your code.
 
 ### ivy2 and sbt caches
@@ -46,4 +47,4 @@ If you have `fig.sh` installed, you can just launch:
 sudo fig run play bash
 ```
 
-### Happy coding
+### Happy coding! :)
