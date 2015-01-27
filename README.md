@@ -9,7 +9,7 @@ You should run this container interactivelly and launch activator console comman
 Includes:
 
  - Oracle JDK 1.8
- - Typesafe Activator 1.2.10
+ - Typesafe Activator 1.2.12
  - Git, wget, curl, build-essential
 
 ## Users
