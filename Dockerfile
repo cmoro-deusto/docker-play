@@ -23,12 +23,12 @@ RUN apt-get update
 RUN apt-get install -y git build-essential curl 
 RUN apt-get install -y wget
 WORKDIR /tmp
-RUN wget http://downloads.typesafe.com/typesafe-activator/1.2.10/typesafe-activator-1.2.10.zip
+RUN wget http://downloads.typesafe.com/typesafe-activator/1.2.12/typesafe-activator-1.2.12.zip
 RUN apt-get install -y zip unzip
 
 # Install play
-RUN unzip typesafe-activator-1.2.10.zip
-RUN mv activator-1.2.10 /opt/activator 
+RUN unzip typesafe-activator-1.2.12.zip
+RUN mv activator-1.2.12 /opt/activator 
 RUN chown -R play:play /opt/activator
 
 # Install Java and dependencies
