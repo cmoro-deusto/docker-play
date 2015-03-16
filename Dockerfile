@@ -19,20 +19,17 @@ RUN mkdir /home/play/Code
 RUN chown play:play /home/play/Code
 
 # Install dependencies
-RUN apt-get update
-RUN apt-get install -y git build-essential curl 
-RUN apt-get install -y wget
+RUN apt-get update && \
+    apt-get install -y git build-essential curl wget zip unzip software-properties-common
 WORKDIR /tmp
-RUN wget http://downloads.typesafe.com/typesafe-activator/1.2.12/typesafe-activator-1.2.12.zip
-RUN apt-get install -y zip unzip
+RUN wget http://downloads.typesafe.com/typesafe-activator/1.3.2/typesafe-activator-1.3.2.zip
 
 # Install play
-RUN unzip typesafe-activator-1.2.12.zip
-RUN mv activator-1.2.12 /opt/activator 
+RUN unzip typesafe-activator-1.3.2.zip
+RUN mv activator-1.3.2 /opt/activator 
 RUN chown -R play:play /opt/activator
 
 # Install Java and dependencies
-RUN apt-get install -y software-properties-common
 RUN \
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
 add-apt-repository -y ppa:webupd8team/java && \
