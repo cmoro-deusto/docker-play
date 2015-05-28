@@ -41,10 +41,12 @@ sudo docker run --rm -it -v "/home/dordoka/Code:/home/play/Code" -p 9000:9000 -p
 ```
 Remember to change `/home/dordoka/Code` to the directory where your code is stored.
 
-## Using fig
-If you have `fig.sh` installed, you can just launch:
+## Using docker-compose
+If you have `docker-compose` installed, you can just launch:
+
 ```
-sudo fig run play
+sudo docker-compose up
 ```
+
 
 ### Happy coding! :)
