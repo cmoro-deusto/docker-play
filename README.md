@@ -1,6 +1,8 @@
 docker-play
 ===========
 
+[![dockeri.co](http://dockeri.co/image/dordoka/play-framework)](https://registry.hub.docker.com/u/dordoka/play-framework/)
+
 This is a minimal docker container based on Ubuntu 14.04 for Play Framework development.
 
 # Description
