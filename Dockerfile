@@ -22,11 +22,11 @@ RUN chown play:play /home/play/Code
 RUN apt-get update && \
     apt-get install -y git build-essential curl wget zip unzip software-properties-common
 WORKDIR /tmp
-RUN wget http://downloads.typesafe.com/typesafe-activator/1.3.2/typesafe-activator-1.3.2.zip
+RUN wget http://downloads.typesafe.com/typesafe-activator/1.3.5/typesafe-activator-1.3.5.zip
 
 # Install play
-RUN unzip typesafe-activator-1.3.2.zip
-RUN mv activator-1.3.2 /opt/activator 
+RUN unzip typesafe-activator-1.3.5.zip
+RUN mv activator-1.3.5 /opt/activator 
 RUN chown -R play:play /opt/activator
 
 # Install Java and dependencies
