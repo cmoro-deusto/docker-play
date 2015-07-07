@@ -26,7 +26,7 @@ RUN wget http://downloads.typesafe.com/typesafe-activator/1.3.5/typesafe-activat
 
 # Install play
 RUN unzip typesafe-activator-1.3.5.zip
-RUN mv activator-1.3.5 /opt/activator 
+RUN mv activator-dist-1.3.5 /opt/activator 
 RUN chown -R play:play /opt/activator
 
 # Install Java and dependencies
