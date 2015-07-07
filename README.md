@@ -1,6 +1,8 @@
 docker-play
 ===========
 
+[![dockeri.co](http://dockeri.co/image/dordoka/play-framework)](https://registry.hub.docker.com/u/dordoka/play-framework/)
+
 This is a minimal docker container based on Ubuntu 14.04 for Play Framework development.
 
 # Description
@@ -41,10 +43,12 @@ sudo docker run --rm -it -v "/home/dordoka/Code:/home/play/Code" -p 9000:9000 -p
 ```
 Remember to change `/home/dordoka/Code` to the directory where your code is stored.
 
-## Using fig
-If you have `fig.sh` installed, you can just launch:
+## Using docker-compose
+If you have `docker-compose` installed, you can just launch:
+
 ```
-sudo fig run play
+sudo docker-compose up
 ```
+
 
 ### Happy coding! :)
