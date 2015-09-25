@@ -25,9 +25,9 @@ WORKDIR /tmp
 RUN wget http://downloads.typesafe.com/typesafe-activator/1.3.6/typesafe-activator-1.3.6.zip
 
 # Install play
-RUN unzip typesafe-activator-1.3.6.zip
-RUN mv activator-dist-1.3.6 /opt/activator 
-RUN chown -R play:play /opt/activator
+RUN unzip typesafe-activator-1.3.6.zip && \
+    mv activator-dist-1.3.6 /opt/activator && \
+    chown -R play:play /opt/activator
 
 # Install Java and dependencies
 RUN \
