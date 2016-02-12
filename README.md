@@ -11,7 +11,7 @@ You should run this container interactivelly and launch activator console comman
 Includes:
 
  - Oracle JDK 1.8
- - Typesafe Activator 1.3.6
+ - Typesafe Activator 1.3.7
  - Git, wget, curl, build-essential
 
 ## Users
@@ -49,6 +49,8 @@ If you have `docker-compose` installed, you can just launch:
 ```
 sudo docker-compose up
 ```
+
+NOTE: compose doesn't support interactive shells directly. See [Issue 423](https://github.com/docker/compose/issues/423)
 
 
 ### Happy coding! :)

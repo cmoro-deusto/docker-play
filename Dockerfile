@@ -19,17 +19,17 @@ RUN mkdir /home/play/Code
 RUN chown play:play /home/play/Code
 
 # Install dependencies
-ENV ACTIVATOR_VERSION 1.3.6
+ENV ACTIVATOR_VERSION 1.3.7
 RUN apt-get update && \
     apt-get install -y git build-essential curl wget zip unzip software-properties-common
 WORKDIR /tmp
 
 # Install play
-RUN wget http://downloads.typesafe.com/typesafe-activator/$ACTIVATOR_VERSION/typesafe-activator-$ACTIVATOR_VERSION.zip && \
-    unzip typesafe-activator-1.3.6.zip && \
-    mv activator-dist-1.3.6 /opt/activator && \
+RUN wget http://downloads.typesafe.com/typesafe-activator/${ACTIVATOR_VERSION}/typesafe-activator-${ACTIVATOR_VERSION}.zip && \
+    unzip typesafe-activator-${ACTIVATOR_VERSION}.zip && \
+    mv activator-dist-${ACTIVATOR_VERSION} /opt/activator && \
     chown -R play:play /opt/activator && \
-    rm typesafe-activator-1.3.6.zip
+    rm typesafe-activator-${ACTIVATOR_VERSION}.zip
 
 # Install Java and dependencies
 RUN \
