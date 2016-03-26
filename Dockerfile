@@ -19,7 +19,7 @@ RUN mkdir /home/play/Code
 RUN chown play:play /home/play/Code
 
 # Install dependencies
-ENV ACTIVATOR_VERSION 1.3.7
+ENV ACTIVATOR_VERSION 1.3.9
 RUN apt-get update && \
     apt-get install -y git build-essential curl wget zip unzip software-properties-common
 WORKDIR /tmp
