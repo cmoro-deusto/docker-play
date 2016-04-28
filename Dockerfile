@@ -41,7 +41,8 @@ rm -rf /var/lib/apt/lists/* && \
 rm -rf /var/cache/oracle-jdk8-installer
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
-RUN echo "export PATH=$PATH:/opt/activator" >> /home/play/.bashrc
+RUN echo "export PATH=$PATH:/opt/activator/bin" >> /home/play/.bashrc
+#Based on https://github.com/cmoro-deusto/docker-play/issues/4
 # Define user home. Activator will store ivy2 and sbt caches on /home/play/Code volume
 RUN echo "export _JAVA_OPTIONS='-Duser.home=/home/play/Code'" >> /home/play/.bashrc
 
